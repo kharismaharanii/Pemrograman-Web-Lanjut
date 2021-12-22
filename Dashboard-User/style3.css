@@ -1,0 +1,499 @@
+body {
+  overflow-x: hidden;
+}
+.garis-navbar-atas {
+  border-top: 10px #004d79 solid;
+}
+.kritiksaranv2{
+  font-size: 25px;
+  color: #003b5e;
+}
+nav {
+  display: flex;
+  background-color: #004d79;
+  justify-content: space-around;
+  padding: 30px 0;
+  color: white;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  width: 35%;
+  justify-content: space-between;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  color: #004d79;
+  background-color: white;
+  padding: 10px 10px;
+  border-radius: 2px;
+}
+nav ul li form a:hover {
+  color: #004d79;
+
+  padding: 10px 10px;
+  border-radius: 2px;
+}
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  height: 20px;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+.menu-toggle input {
+  position: absolute;
+  width: 40px;
+  height: 28px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background-color: #ffffff;
+  border-radius: 3px;
+  transition: all 0.5s;
+}
+
+/*Hamburger Menu Animation*/
+.menu-toggle span:nth-child(2) {
+  transform-origin: 0 0;
+}
+.menu-toggle span:nth-child(4) {
+  transform-origin: 0 100%;
+}
+.menu-toggle input:checked ~ span:nth-child(2) {
+  background-color: #ffffff;
+  transform: rotate(45deg) translate(-1px, -1px);
+}
+.menu-toggle input:checked ~ span:nth-child(4) {
+  background-color: #ffffff;
+  transform: rotate(-45deg) translate(-1px, 0);
+}
+.menu-toggle input:checked ~ span:nth-child(3) {
+  opacity: 0;
+  transform: scale(0);
+}
+
+.button1 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  padding-left: 5px;
+}
+
+.button1 span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button1:hover span {
+  padding-right: 25px;
+}
+
+.button1:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+@media screen and (max-width: 1071px) {
+  nav ul {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 878px) {
+  nav ul {
+    width: 55%;
+  }
+}
+@media screen and (max-width: 645px) {
+  nav ul {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .logo {
+    margin-left: 90px;
+  }
+  .menu-toggle {
+    display: flex;
+  }
+  nav ul {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    align-items: center;
+    width: 70%;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background-color: #1c252e;
+    z-index: 1;
+    transform: translateX(100%);
+    transition: all 1s;
+  }
+  nav ul.slide {
+    transform: translateX(0);
+  }
+}
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #004d79;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  padding: 10px;
+  width: 115px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  margin-left: 20px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.headerdashboard{
+  background: url('asset/img/bgdashboard.jpg');
+  height: 516px;
+}
+.nameuser{
+  padding-top: 100px;
+  text-align: center;
+  font-size: 30px;
+  color: #003b5e;
+}
+.userp{
+  text-align: center;
+  color: #003b5e;
+}
+.databaeasiswa{
+  padding: 60px;
+}
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.garis-navbar-bawah {
+  border-top: 1px #004d79 solid;
+}
+.posisitext {
+  margin-top: 130px;
+  margin-left: 30px;
+  color: #004d79;
+}
+.beasiswaku img {
+  max-width: 100%;
+}
+.bg-header {
+  background-position: absolute;
+  background-repeat: repeat-x;
+}
+
+.posisi-definition {
+  font-size: 25px;
+  margin-top: 30px;
+  color: #004d79;
+}
+.deskripsi-definition {
+  font-size: 14px;
+  margin-top: 15px;
+}
+.button2 {
+  background-color: #004d79;
+  border: none;
+  color: white;
+  padding: 8px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button2 {
+  background-color: white;
+  color: #004d79;
+  border: 2px solid #004d79;
+}
+
+.button2:hover {
+  background-color: #004d79;
+  color: white;
+}
+.img-keuntungan {
+  margin-top: 50px;
+}
+.posisi-keuntungan {
+  font-size: 25px;
+  margin-top: 150px;
+  color: #004d79;
+}
+.posisi-keuntungan1 {
+  font-size: 25px;
+  margin-top: 100px;
+  color: #004d79;
+}
+
+.posisi-panduan {
+  font-size: 25px;
+  margin-top: 100px;
+  color: #004d79;
+}
+
+.deskripsi-keuntungan {
+  font-size: 14px;
+  margin-top: 15px;
+}
+.sosmed {
+  margin-top: 25px;
+  background-color: #004d79;
+}
+.follow-sosmed {
+  font-size: 25px;
+  margin-top: 50px;
+  color: #ffffff;
+}
+.icon-sosmed {
+  margin-top: 10px;
+  font-size: 13px;
+  padding-bottom: 50px;
+}
+.icon-sosmed a {
+  text-decoration: none;
+}
+.icon-sosmed a :hover {
+  background-color: #004d79;
+}
+.fa {
+  padding: 10px;
+  cursor: pointer;
+  color: #ffffff;
+}
+.beasiswaku {
+  background-color: #cae8fa;
+  position: relative;
+}
+.footer {
+  border-top: #004d79 7px solid;
+  background-color: #1c252e;
+}
+.posisi-footer {
+  font-size: 25px;
+  margin-top: 100px;
+  color: #ffffff;
+  border-bottom: #ffffff 5px;
+}
+.deskripsi-footer {
+  color: #ffffff;
+  margin-top: 15px;
+  margin-bottom: 100px;
+}
+.navigasi {
+  margin-top: 15px;
+}
+.navigasi1 {
+  color: #ffffff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.navigasi a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.garis {
+  border-bottom: #ffd629 2px solid;
+  width: 150px;
+}
+.copyright {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #6987ab;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/* kharisma */
+.all {
+  font-family: Nunito, Arial, Helvetica Neue, Helvetica, serif, sans-serif;
+}
+
+.login {
+  margin-top: 55px;
+}
+
+.daftar {
+  margin-top: 12px;
+}
+
+.btnmasuk {
+  height: 37px;
+  margin-left: 10px;
+}
+
+.card-header {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.email {
+  margin-bottom: 15px;
+}
+
+.pswd {
+  margin-bottom: 15px;
+}
+
+.form-check {
+  font-size: 14px;
+}
+
+.btnlogin {
+  width: 100%;
+  margin-top: 60px;
+  background-color: #004d79;
+  color: white;
+  border-radius: 10px;
+  height: 37px;
+}
+
+.btnlogin:hover {
+  border-radius: 10px;
+  background-color: #003b5e;
+}
+
+.btndaftar {
+  width: 100%;
+  margin-top: 2px;
+  background-color: #004d79;
+  color: white;
+  border-radius: 10px;
+  height: 37px;
+}
+
+.btndaftar:hover {
+  border-radius: 10px;
+  background-color: #003b5e;
+}
+
+.pdaftar {
+  margin-top: 10px;
+  text-align: center;
+  font-size: small;
+  opacity: 75%;
+}
+
+.gambarlogin {
+  margin-top: 10px;
+}
+
+.panduan {
+  text-align: center;
+  font-size: 20px;
+  color: #004d79;
+  margin-top: 10px;
+}
+
+.garis {
+  border-bottom: #ffd629 2px solid;
+  width: 150px;
+}
+
+.penjelasan {
+  margin-left: 50px;
+}
+
+.jarakatas {
+  margin-top: 15px;
+}
+
+.fontaja {
+  font-size: 50px;
+}
+
+/* Style Login */
+
+.form-control {
+  min-height: 41px;
+  background: #f2f2f2;
+  box-shadow: none !important;
+  border: transparent;
+}
+.form-control:focus {
+  background: #e2e2e2;
+}
+.form-control,
+.btn {
+  border-radius: 2px;
+}
+.login-form {
+  width: 350px;
+  margin: 30px auto;
+  text-align: center;
+}
+.login-form h2 {
+  margin: 10px 0 25px;
+}
+.login-form form {
+  color: #7a7a7a;
+  border-radius: 3px;
+  margin-bottom: 15px;
+  background: #fff;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  padding: 30px;
+}
+.login-form .btn {
+  font-size: 16px;
+  font-weight: bold;
+  background: #3598dc;
+  border: none;
+  outline: none !important;
+}
+.login-form .btn:hover,
+.login-form .btn:focus {
+  background: #2389cd;
+}
+.login-form a {
+  color: #fff;
+  text-decoration: underline;
+}
+.login-form a:hover {
+  text-decoration: none;
+}
+.login-form form a {
+  color: #7a7a7a;
+  text-decoration: none;
+}
+.login-form form a:hover {
+  text-decoration: underline;
+}
